@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', [
+   'as' => 'home_path',
+   'uses' => 'pagesController@home'
+]);
+
+
+Route::get('/about', [
+   'as' => 'about',
+   'uses' => 'pagesController@about'
+]);
