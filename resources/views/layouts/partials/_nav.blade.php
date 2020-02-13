@@ -6,10 +6,10 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item {{set_active_route('home_path')}} ">
                 <a class="nav-link" href="{{route('home_path')}}">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{set_active_route('about')}}">
                 <a class="nav-link" href="{{route('about')}}">About</a>
             </li>
             <li class="nav-item">

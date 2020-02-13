@@ -8,7 +8,8 @@
    <link rel="stylesheet" href="{{asset('/css/bootstrap/bootstrap.min.css')}}">
    <link rel="stylesheet" href="{{asset('/css/bootstrap/mdb.min.css')}}">
    <link rel="stylesheet" href="{{asset('/css/fontawesome/all.min.css')}}">
-   <title>Laracarte</title>
+   <title>{{page_title($title ?? '')}}</title>
+   {{-- <title>Laracarte {{isset($title) ? '|' . $title : ''}}</title> --}}
 
    <style>
       footer {

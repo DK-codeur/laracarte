@@ -1,4 +1,4 @@
-@extends('layouts/master')
+@extends('layouts/master', ['title' => 'About'])
 
 @section('content')
 	<div class="container">
@@ -13,7 +13,7 @@
 			</div>
 		</div>
 
-		<P>feel free to help to improve the <a href="https://github.com/DK-codeur/laracarte">source code</a></P>
+		<P>feel free to help to improve the <a href="https://github.com/DK-codeur/laracarte" target="_blank">source code</a></P>
 
 		<hr>
 
