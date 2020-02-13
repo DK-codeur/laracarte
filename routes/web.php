@@ -15,11 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [
    'as' => 'home_path',
-   'uses' => 'pagesController@home'
+   'uses' => 'PagesController@home'
 ]);
 
 
 Route::get('/about', [
    'as' => 'about',
-   'uses' => 'pagesController@about'
+   'uses' => 'PagesController@about'
 ]);
+
+Route::get('/contact', 'ContactController@create')->name('contact');
