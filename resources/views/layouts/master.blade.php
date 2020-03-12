@@ -29,6 +29,8 @@
    <script src="{{asset('/js/bootstrap.min.js')}}"></script>
    <script src="{{asset('/js/mdb.min.js')}}"></script>
    <script src="{{asset('/js/all.min.js')}}"></script>
+
+   @include('flashy::message')
    
 </body>
 </html>

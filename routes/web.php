@@ -11,12 +11,17 @@
 |
 */
 
+use App\Mail\ContactMessageCreated;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [
    'as' => 'home_path',
    'uses' => 'PagesController@home'
 ]);
+
+// Route::get('/test-mail', function() {
+//    return  new ContactMessageCreated('DK-codeur', 'derco@dk.co', 'nouveau msg !');
+// });
 
 
 Route::get('/about', [
@@ -25,3 +30,5 @@ Route::get('/about', [
 ]);
 
 Route::get('/contact', 'ContactController@create')->name('contact');
+Route::post('/contact', 'ContactController@store')->name('contact');
+
